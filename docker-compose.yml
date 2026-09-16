@@ -1,10 +1,29 @@
-version: "3.8"
+version: "3.9"
 
 services:
-  r3de:
-    build: .
-    container_name: r3de_pipeline
-    ports:
-      - "8000:8000"
-    environment:
-      - APIFY_TOKEN=${APIFY_TOKEN}
+  schema-check:
+    image: python:3.11-slim
+    working_dir: /work
+    volumes:
+      - ./:/work
+    command: >
+      sh -c "pip install --quiet jsonschema &&
+             python -c \"import json; json.load(open('.actor/actor.json'))\" &&
+             python -c \"import json; json.load(open('.actor/input_schema.json'))\" &&
+             python -c \"import json; json.load(open('.actor/dataset_schema.json'))\" &&
+             echo 'schema files are well-formed'"
+
+  smoke-test:
+    image: curlimages/curl:8.9.1
+    working_dir: /work
+    volumes:
+      - ./:/work
+    env_file:
+      - .env
+    entrypoint: >
+      sh -c "curl -sf -X POST
+             \"https://api.apify.com/v2/acts/gunmetal~r3-de/run-sync-get-dataset-items?token=$${APIFY_TOKEN}\"
+             -H 'Content-Type: application/json'
+             -d @tests/fixtures/sample_input.json"
+    depends_on:
+      - schema-check
