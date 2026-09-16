@@ -1,9 +1,13 @@
 # R³-DE: Rich Recursive Reasoning & Dialogue Extraction
 
-R³-DE is a multi-layer Natural Language Understanding (NLU) pipeline that transforms raw text or web-scraped content into structured, training-ready datasets. It extracts semantic, causal, and probabilistic signals from unstructured language and produces deterministic outputs suitable for machine learning, analytics, and safety-critical systems.
+R³-DE is a multi-layer NLU pipeline that turns raw text, transcripts, or scraped content into structured, AI-training-ready records. It identifies speakers, entities, actions, states, intent, sentiment, causal relationships, and confidence scores, then packages the result as clean prompt-completion pairs for downstream model training and evaluation.
 
->Visit R3 | DE Official Page: [@R³-DE](https://apify.com/gunmetal/r3-de)
+This repository is a developer-facing mirror of the actor published on the Apify Store. Apify does not expose actor source through the marketplace UI, so this repo exists to give developers a way to read the design, inspect the contracts, and understand how to integrate R³-DE without needing store access.
 
+- Marketplace listing: https://apify.com/gunmetal/r3-de
+- Actor identifier: gunmetal/r3-de
+- Maintainer: GUN | METAL
+- Pricing model: pay per result, from $0.10 / 1,000 results
 ---
 
 ## Overview
