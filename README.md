@@ -4,10 +4,6 @@ R³-DE is a multi-layer Natural Language Understanding (NLU) pipeline that trans
 
 >Visit R3 | DE Official Page: [@R³-DE](https://apify.com/gunmetal/r3-de)
 
-<img width="1536" height="1024" alt="R3DE_details reviews" src="https://github.com/user-attachments/assets/59dad310-cb23-459f-b819-5957d0855b5a" />
-
-<img width="1536" height="1024" alt="R3DE_#1" src="https://github.com/user-attachments/assets/3945ad34-30c7-43dc-9979-c3c0be712fd5" />
-
 ---
 
 ## Overview
