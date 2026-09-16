@@ -329,3 +329,9 @@ R³-DE transforms raw language into structured, causally-aware, uncertainty-quan
 
 [1]: https://apify.com/gunmetal/r3-de?utm_source=chatgpt.com "R3 | DE · Apify"
 [2]: https://apify.com/gunmetal/r3-de/api?utm_source=chatgpt.com "R3 | DE API · Apify"
+
+---
+
+## License
+
+R3 | DE is distributed under the terms defined in `LICENSE`.
