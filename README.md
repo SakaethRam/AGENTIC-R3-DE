@@ -10,17 +10,21 @@ R³-DE is a multi-layer Natural Language Understanding (NLU) pipeline that trans
 
 R³-DE converts unstructured inputs such as conversations, logs, transcripts, and articles into structured records containing:
 
-* Speakers
-* Entities
-* Actions (triggers)
-* States
-* Intent classification
-* Sentiment polarity
-* Temporal signals
-* Semantic clusters
-* Causal relationships
-* Confidence and uncertainty scores
-* Prompt–completion pairs
+| Aspect | Details |
+|---|---|
+| **Purpose** | Converts unstructured inputs into structured, machine-readable records |
+| **Input Types** | Conversations, logs, transcripts, articles, and other unstructured text |
+| **Speakers** | Identifies and structures speaker information |
+| **Entities** | Extracts relevant entities from the input |
+| **Actions / Triggers** | Detects actions, events, and triggering conditions |
+| **States** | Captures contextual and semantic states |
+| **Intent Classification** | Classifies underlying user or conversational intent |
+| **Sentiment Polarity** | Identifies sentiment and polarity |
+| **Temporal Signals** | Extracts time-related signals and relationships |
+| **Semantic Clusters** | Groups semantically related information |
+| **Causal Relationships** | Identifies potential cause-and-effect relationships |
+| **Confidence & Uncertainty** | Provides confidence and uncertainty scores |
+| **Prompt–Completion Pairs** | Generates structured prompt–completion pairs for downstream AI applications |
 
 The system is designed for reproducibility, interpretability, and downstream AI integration. ([Apify][1])
 
@@ -81,66 +85,6 @@ The system is designed for reproducibility, interpretability, and downstream AI 
 * Prompt–completion dataset generation
 * Deterministic inference (no randomness)
 * Schema-locked outputs for reproducibility ([Apify][1])
-
----
-
-## Project Structure
-
-```
-r3-de/
-│
-├── src/
-│   ├── input_layer.py
-│   ├── perception.py
-│   ├── semantic.py
-│   ├── causality.py
-│   ├── uncertainty.py
-│   └── synthesis.py
-│
-├── main.py
-├── requirements.txt
-├── Dockerfile
-├── docker-compose.yml
-└── README.md
-```
-
----
-
-## Installation
-
-### Prerequisites
-
-* Python 3.10+
-* Node.js (optional for Apify CLI)
-* Docker (recommended)
-
----
-
-### Local Setup
-
-```bash
-git clone 'https://github.com/SakaethRam/Agentic-R3-DE.git'
-cd agentic-r3-de
-
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-```
-
----
-
-## Running Locally
-
-```bash
-python main.py
-```
-
-Input can be provided as:
-
-```json
-{
-  "rawText": "Alice: Schedule meeting tomorrow at 3pm."
-}
-```
 
 ---
 
