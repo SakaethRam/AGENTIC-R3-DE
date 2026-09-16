@@ -94,40 +94,6 @@ The system is designed for reproducibility, interpretability, and downstream AI 
 
 ## Docker Setup
 
-### Dockerfile
-
-```dockerfile
-FROM python:3.10-slim
-
-WORKDIR /app
-
-COPY . .
-
-RUN pip install --no-cache-dir -r requirements.txt && \
-    python -m spacy download en_core_web_sm
-
-CMD ["python", "main.py"]
-```
-
----
-
-### docker-compose.yml
-
-```yaml
-version: "3.8"
-
-services:
-  r3de:
-    build: .
-    container_name: r3de_pipeline
-    ports:
-      - "8000:8000"
-    environment:
-      - APIFY_TOKEN=${APIFY_TOKEN}
-```
-
----
-
 ### Run with Docker
 
 ```bash
