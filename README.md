@@ -302,16 +302,6 @@ R³-DE is designed for horizontal scalability via:
 
 ---
 
-## Roadmap
-
-* Real-time streaming ingestion
-* Transformer-based embeddings
-* Advanced causal inference (graph-based)
-* Multi-modal support (audio/video)
-* Reinforcement learning integration
-
----
-
 ## Contributing
 
 1. Fork the repository
@@ -324,11 +314,6 @@ R³-DE is designed for horizontal scalability via:
 ## Summary
 
 R³-DE transforms raw language into structured, causally-aware, uncertainty-quantified intelligence. It bridges the gap between unstructured text and decision-ready data pipelines, making it a foundational system for next-generation AI applications.
-
----
-
-[1]: https://apify.com/gunmetal/r3-de?utm_source=chatgpt.com "R3 | DE · Apify"
-[2]: https://apify.com/gunmetal/r3-de/api?utm_source=chatgpt.com "R3 | DE API · Apify"
 
 ---
 
