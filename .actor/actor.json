@@ -1,0 +1,37 @@
+{
+  "actorSpecification": 1,
+  "name": "r3-de",
+  "title": "R3 | DE",
+  "description": "Multi-layer NLP pipeline that transforms raw text or scraped content into structured records with speakers, entities, actions, states, intent, sentiment, causality, and confidence scores, plus ready-to-train prompt-completion pairs.",
+  "version": "1.0",
+  "buildTag": "latest",
+  "namespace": "gunmetal",
+  "uniqueName": "gunmetal/r3-de",
+  "author": {
+    "name": "GUN | METAL",
+    "developer": "Sakaeth Ram"
+  },
+  "categories": [
+    "AGENTS",
+    "AUTOMATION",
+    "DEVELOPER_TOOLS"
+  ],
+  "pricingModel": "PAY_PER_RESULT",
+  "pricingInfo": {
+    "unit": "1000 results",
+    "amount": 0.10,
+    "currency": "USD"
+  },
+  "input": "./input_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "readme": "../README.md",
+  "dockerfile": "../Dockerfile",
+  "environmentVariables": {
+    "APIFY_TOKEN": {
+      "required": false,
+      "description": "Required only for local runs that call back to the Apify platform."
+    }
+  }
+}
