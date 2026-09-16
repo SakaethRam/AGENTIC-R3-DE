@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  r3de:
+    build: .
+    container_name: r3de_pipeline
+    ports:
+      - "8000:8000"
+    environment:
+      - APIFY_TOKEN=${APIFY_TOKEN}
