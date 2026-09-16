@@ -1,0 +1,45 @@
+{
+  "title": "R3 | DE dataset item",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "structured_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "speaker": { "type": "string" },
+          "entity": { "type": "string" },
+          "state": { "type": "string" },
+          "trigger": { "type": "string" },
+          "intent": { "type": "string" },
+          "sentiment": { "type": "number" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "original_text": { "type": "string" }
+        },
+        "required": ["speaker", "state", "trigger", "intent", "confidence", "original_text"]
+      }
+    },
+    "sequences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "prompt": { "type": "string" },
+          "completion": { "type": "string" }
+        },
+        "required": ["prompt", "completion"]
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "num_records": { "type": "integer" },
+        "average_confidence": { "type": "number" },
+        "num_clusters_discovered": { "type": "integer" }
+      },
+      "required": ["num_records", "average_confidence"]
+    }
+  },
+  "required": ["structured_records", "sequences", "metadata"]
+}

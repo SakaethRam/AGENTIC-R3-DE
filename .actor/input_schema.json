@@ -1,0 +1,15 @@
+{
+  "title": "R3 | DE input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "rawText": {
+      "title": "Direct raw text",
+      "type": "string",
+      "description": "Paste raw, unstructured text such as conversations, transcripts, logs, reports, or notes. Speaker labels, timestamps, intent, and structure will be inferred automatically.",
+      "editor": "textarea",
+      "nullable": true
+    }
+  },
+  "required": []
+}
