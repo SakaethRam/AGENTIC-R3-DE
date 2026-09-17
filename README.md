@@ -8,6 +8,9 @@ This repository is a developer-facing mirror of the actor published on the Apify
 - Actor identifier: gunmetal/r3-de
 - Maintainer: GUN | METAL
 - Pricing model: pay per result, from $0.10 / 1,000 results
+
+<img width="1800" height="1000" alt="ZREX R3DE" src="https://github.com/user-attachments/assets/11f867bd-2ab1-40ef-96de-6e5a3ec270cd" />
+
 ---
 
 ## Overview
