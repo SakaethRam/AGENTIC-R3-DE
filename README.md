@@ -1,4 +1,4 @@
-# R³-DE: Rich Recursive Reasoning & Dialogue Extraction
+# R³ | DE: Rich Recursive Reasoning & Dialogue Extraction
 
 R³-DE is a multi-layer NLU pipeline that turns raw text, transcripts, or scraped content into structured, AI-training-ready records. It identifies speakers, entities, actions, states, intent, sentiment, causal relationships, and confidence scores, then packages the result as clean prompt-completion pairs for downstream model training and evaluation.
 
